@@ -61,7 +61,7 @@ License
 =======
 
 The content of this theme is distributed and licensed under a
-![License Badge](https://i.creativecommons.org/l/by/4.0/88x31.png)
+![License Badge](/images/cc_by_88x31.png)
 [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
 
     This license lets others distribute, remix, tweak, and build upon your work,
@@ -74,4 +74,6 @@ respective owners:
 
 * js/bootstrap.min.js - [bootstrap](http://getbootstrap.com)
 * css/bootstrap.min.css - [bootstrap](http://getbootstrap.com)
-* js/jquery.min.js - [jquery](https://jquery.com/)
+* js/jquery.min.js - [jquery](https://jquery.com)
+* images/cc_by_80x15.png - [creative commons](https://creativecommons.org)
+* images/cc_by_88x31.png - [creative commons](https://creativecommons.org)
