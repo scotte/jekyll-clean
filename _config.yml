@@ -1,5 +1,7 @@
 name: My blog
 description: A jekyll theme
+url: http://scotte.github.io
+baseurl: /jekyll-clean
 
 # Set the following to enable these features, leave as '' to disable them
 github: 'scotte/jekyll-clean'

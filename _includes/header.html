@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <title>{{ site.name }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/theme.css" rel="stylesheet">
+    <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/theme.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,12 +17,12 @@
     <div class="row-fluid">
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/">{{ site.name }}</a>
+                <a class="navbar-brand" href="{{ site.baseurl }}">{{ site.name }}</a>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">Home</a></li>
-                    <li class="active"><a href="/archive.html">Archive</a></li>
-                    <li class="active"><a href="/about.html">About</a></li>
-                    <li class="active"><a href="/atom.xml">RSS</a></li>
+                    <li class="active"><a href="{{ site.baseurl }}">Home</a></li>
+                    <li class="active"><a href="{{ site.baseurl }}/archive.html">Archive</a></li>
+                    <li class="active"><a href="{{ site.baseurl }}/about.html">About</a></li>
+                    <li class="active"><a href="{{ site.baseurl }}/atom.xml">RSS</a></li>
                     {% if site.github != '' %}
                       <li class="active"><a href="https://github.com/{{ site.github }}">Github</a></li>
                     {% endif %}
