@@ -3,37 +3,13 @@
         <div class="span12 footer navbar-inverse navbar-fixed-bottom">
             <p class="copyright">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.name }}. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="https://github.com/scotte/jekyll-clean">Scott Emmons</a>.
             <a href="http://creativecommons.org/licenses/by/4.0/"><img src="https://i.creativecommons.org/l/by/4.0/80x15.png"/></a>
-            Licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+            Licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>.</p>
         </div>
     </div>
 </div>
 
-  {% if site.comments == true and site.disqus != '' %}
-      <script type="text/javascript">
-        var disqus_shortname = '{{ site.disqus }}';
-
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-    </script>
-  {% endif %}
-
-
-  {% if site.gaaccount != '' %}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', '{{ site.gaaccount }}', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-  {% endif %}
+{% include disqus-counts.html %}
+{% include analytics.html %}
 
 </body>
 </html>

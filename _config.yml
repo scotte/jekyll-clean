@@ -1,16 +1,28 @@
+# Jekyll configuration
+
 name: My blog
 description: A jekyll theme
+
+# url is currently only used only for the RSS feed in atom.xml
 url: http://scotte.github.io
+
+# baseurl will usually be ''
 baseurl: /jekyll-clean
 
-# Set the following to enable these features, leave as '' to disable them
+# This can be '' to hide the Github nav button
 github: 'scotte/jekyll-clean'
+
+# Set this to your UA-# value, or '' to disable the block completely
 gaaccount: ''
+
+# Set this to your disqus shortname to enable comments. Note that the 'comments'
+# setting below must also be true. Individual posts can override 'comments' to
+# disable on a post-by-post basis
 disqus: ''
+comments: true
 
 permalink: /:year/:month/:title
 paginate: 3
-comments: true
 
 highlighter: pygments
 markdown: redcarpet
