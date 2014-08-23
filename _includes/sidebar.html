@@ -1,0 +1,22 @@
+<div class="sidebar well">
+{{ site.description }}
+</div>
+
+<div class="sidebar well">
+    <h1>Recent Posts</h1>
+    <ul>
+        {% for post in site.posts limit:5 %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="sidebar well">
+    <h1>Links</h1>
+    <ul>
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+    </ul>
+</div>

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+<div class="article">
+    <div class="well">
+        <h1><a href="{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h1>
+        {% if site.comments == true and post.comments == true and site.disqus != '' %}
+          <p class="author"># Comments</p>
+        {% endif %}
+        <div class="content">
+            {{ post.content }}
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <a class="btn btn-default" href="/index.html" class="previous">Newer</a>
+      {% else %}
+        <a class="btn btn-default" href="/page{{ paginator.previous_page }}" class="previous">Newer</a>
+      {% endif %}
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a class="btn btn-default" href="/page{{ paginator.next_page }}" class="next">Older</a>
+  {% endif %}
+</div>
