@@ -6,9 +6,15 @@ A simple and clean Jekyll theme using [bootstrap](http://getbootstrap.com)
 modular in component and element reuse.
 
 It uses Disqus for comments and includes Google Analytics support. Both of
-these features are disabled by default and can be enabled via _config.yml. You
+these features are disabled by default and can be enabled via \_config.yml. You
 can also rip this code out of the templates if you like (footer.html and post.html).
 The beauty of Jekyll - keep things clean... Jekyll Clean!
+
+The theme works well on mobile phones, using a collapsable nav bar and hiding the
+sidbar.
+
+Don't forget to occassionally rebase against my upstream repository so you can get
+the latest changes. Pull requests are encouraged and accepted!
 
 License
 =======
