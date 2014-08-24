@@ -3,7 +3,7 @@
 name: My blog
 description: A jekyll theme
 
-# url is currently only used only for the RSS feed in atom.xml
+# url is currently only used only for the RSS feed in feed.xml
 url: http://scotte.github.io
 
 # baseurl will usually be ''
