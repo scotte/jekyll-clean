@@ -72,6 +72,10 @@ The content of this theme is distributed and licensed under a
     is the most accommodating of licenses offered. Recommended for maximum
     dissemination and use of licensed materials.
 
+In other words: you can do anything you want with this theme on any site, just please
+provide a link to [the original theme on github](https://github.com/scotte/jekyll-clean)
+so I get credit for the original design. Beyond that, have at it!
+
 This theme includes the following files which are the properties of their
 respective owners:
 
