@@ -7,8 +7,8 @@ layout: null
 	<channel>
 		<title>{{ site.name }}</title>
 		<description>{{ site.description }}</description>
-		<link>{{ site.baseurl}}{{ site.url }}</link>
-		<atom:link href="{{ site.baseurl}}{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+		<link>{{ site.url }}{{ site.baseurl }}</link>
+		<atom:link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
 		{% for post in site.posts limit:10 %}
 			<item>
 				<title>{{ post.title }}</title>
