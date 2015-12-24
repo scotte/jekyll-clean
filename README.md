@@ -83,6 +83,22 @@ $ jekyll serve
 Now browse to http://127.0.0.1:4000/jekyll-clean/ (adjust per your **baseurl**
 in _config.yml).
 
+Disqus Comments
+===============
+
+Getting Disqus to work can be a bit more work than it seems like it should be.
+Make sure your Disqus account is correctly configured with the right domain
+of your blog and you know your Disqus shortname.
+
+In _config.yml you'll need to set **disqus** to your Disqus shortname and
+make sure **comments** is true.
+
+Finally, in posts, make sure you have **comments: true** in the YAML front
+matter.
+
+More information on using Disqus with Jekyll is
+[documented here](https://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions).
+
 License
 =======
 
