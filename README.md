@@ -60,6 +60,29 @@ and \_posts, and so on, but in practice this is pretty simple.
 This is how I maintain my own blog which is based on this theme. The old history is
 sitting in an **old-master** branch that I can refer to when I need to.
 
+Running Locally
+===============
+
+Here's the exact set of packages I need to install on Debian to run jekyll
+locally with this theme for testing.
+
+```
+$ sudo aptitude install ruby ruby-dev rubygems nodejs
+$ sudo gem install jekyll
+$ sudo gem install redcarpet
+$ sudo gem install pygments.rb
+$ sudo gem install jekyll-paginate
+```
+
+And then it's just a simple matter of running jekyll locally:
+
+```
+$ jekyll serve
+```
+
+Now browse to http://127.0.0.1:4000/jekyll-clean/ (adjust per your **baseurl**
+in _config.yml).
+
 License
 =======
 
