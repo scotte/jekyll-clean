@@ -10,7 +10,7 @@
             <div class="well">
                 <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%b %-d, %Y" }} - {{ page.title }}</a></h1>
             {% if site.comments == true and page.comments == true and site.disqus != '' %}
-                <p class="author"><a href="#disqus_thread">Comments</a></p>
+                <p class="author"><a href="#disqus_thread" data-disqus-identifier="{{ page.url | slugify }}">Comments</a></p>
             {% endif %}
             <div class="post-content">
             {{ content }}
