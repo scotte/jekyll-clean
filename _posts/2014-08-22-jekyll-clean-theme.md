@@ -74,8 +74,6 @@ locally with this theme for testing.
 ```
 $ sudo aptitude install ruby ruby-dev rubygems nodejs
 $ sudo gem install jekyll
-$ sudo gem install redcarpet
-$ sudo gem install pygments.rb
 $ sudo gem install jekyll-paginate
 ```
 
