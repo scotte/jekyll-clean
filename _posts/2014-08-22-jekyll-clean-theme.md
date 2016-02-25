@@ -83,8 +83,7 @@ And then it's just a simple matter of running jekyll locally:
 $ jekyll serve --baseurl=''
 ```
 
-Now browse to http://127.0.0.1:4000/jekyll-clean/ (adjust per your **baseurl**
-in _config.yml).
+Now browse to http://127.0.0.1:4000/
 
 Disqus Comments
 ===============
