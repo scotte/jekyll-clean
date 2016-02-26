@@ -106,18 +106,18 @@ Code Syntax Highlighting
 To use code syntax highlighting, use the following syntax:
 
 ```
- ```python
- import random
+```python
+import random
 
- # Roll the die
- roll = random.randint(1,20)
- print('You rolled a %d.' % roll)
- ```
+# Roll the die
+roll = random.randint(1,20)
+print('You rolled a %d.' % roll)
+``` #REMOVE
 ```
 
-Which will look like this in the rendered jekyll output using the default
-css/syntax.css provided with this theme (which is the **colorful** theme from
-[https://github.com/iwootten/jekyll-syntax](https://github.com/iwootten/jekyll-syntax)):
+(Remove #REMOVE from the end of the last line). Which will look like this in
+the rendered jekyll output using the default css/syntax.css provided with this
+theme (which is the **colorful** theme from [https://github.com/iwootten/jekyll-syntax](https://github.com/iwootten/jekyll-syntax)):
 
 ```python
 import random
@@ -129,9 +129,6 @@ print('You rolled a %d.' % roll)
 
 You can, of course, use any theme you wish, see the jekyll and pygments
 documentation for more details.
-
-Note that I cheated in the code sample above, using leading spaces to escape
-the example - be aware of this if you cut/paste that example.
 
 License
 =======
