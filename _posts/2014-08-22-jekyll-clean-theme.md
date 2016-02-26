@@ -73,8 +73,7 @@ locally with this theme for testing.
 
 ```
 $ sudo aptitude install ruby ruby-dev rubygems nodejs
-$ sudo gem install jekyll
-$ sudo gem install jekyll-paginate
+$ sudo gem install jekyll jekyll-paginate
 ```
 
 And then it's just a simple matter of running jekyll locally:
