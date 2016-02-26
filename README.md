@@ -105,7 +105,7 @@ To use code syntax highlighting, use the following syntax:
 import random
 
 # Roll the die
-roll = random.randint(1,20)
+roll = random.randint(1, 20)
 print('You rolled a %d.' % roll)
 ``` #REMOVE
 ```
@@ -118,7 +118,7 @@ theme (which is the **colorful** theme from [https://github.com/iwootten/jekyll-
 import random
 
 # Roll the die
-roll = random.randint(1,20)
+roll = random.randint(1, 20)
 print('You rolled a %d.' % roll)
 ```
 
