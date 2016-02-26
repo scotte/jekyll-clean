@@ -100,6 +100,39 @@ matter.
 More information on using Disqus with Jekyll is
 [documented here](https://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions).
 
+Code Syntax Highlighting
+========================
+
+To use code syntax highlighting, use the following syntax:
+
+```
+ ```python
+ import random
+
+ # Roll the die
+ roll = random.randint(1,20)
+ print('You rolled a %d.' % roll)
+ ```
+```
+
+Which will look like this in the rendered jekyll output using the default
+css/syntax.css provided with this theme (which is the **colorful** theme from
+[https://github.com/iwootten/jekyll-syntax](https://github.com/iwootten/jekyll-syntax)):
+
+```python
+import random
+
+# Roll the die
+roll = random.randint(1,20)
+print('You rolled a %d.' % roll)
+```
+
+You can, of course, use any theme you wish, see the jekyll and pygments
+documentation for more details.
+
+Note that I cheated in the code sample above, using leading spaces to escape
+the example - be aware of this if you cut/paste that example.
+
 License
 =======
 
@@ -123,3 +156,4 @@ respective owners:
 * css/bootstrap.min.css - [bootstrap](http://getbootstrap.com)
 * js/jquery.min.js - [jquery](https://jquery.com)
 * images/cc_by_88x31.png - [creative commons](https://creativecommons.org)
+* css/colorful.css - [iwootten/jekyll-syntax](https://github.com/iwootten/jekyll-syntax)
