@@ -4,7 +4,7 @@ name: My blog
 description: A jekyll theme
 
 # url is currently only used only for the RSS feed in feed.xml
-url: http://scotte.github.io
+url: https://scotte.github.io/jekyll-clean
 
 # baseurl will often be '', but for a project page on gh-pages, it needs to
 # be the project name.
