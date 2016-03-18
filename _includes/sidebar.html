@@ -2,7 +2,23 @@
 <h1>Introduction</h1>
 {{ site.description }}
 </div>
-
+<div class="sidebar well">
+    <h1>Categories</h1>
+{% for category in site.categories %}
+<a href="/categories/#{{category | first}}"><h2>{{ category | first }}(<b>{{ category | last | size }}</b>)</h2></a>
+<ul class="arc-list">
+    {% for post in category.last limit:5 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+{% endfor %}
+</div>
+<div class="sidebar well">
+    <h1>Tags</h1>
+{% for tag in site.tags %}
+<a href="/tags/#{{tag | first}}">{{ tag | first }}(<b>{{ tag | last | size }}</b>)</a>
+{% endfor %}
+</div>
 <div class="sidebar well">
     <h1>Recent Blogs</h1>
     <ul>
