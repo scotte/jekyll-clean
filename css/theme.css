@@ -41,6 +41,10 @@ body {
     color: #ee4444;
     font-size: 1.3em;
 }
+.well h2 {
+    color: #3D3D3D;
+    font-size: 1.2em;
+}
 
 .author {
     color: #ee4444;
@@ -48,4 +52,28 @@ body {
 
 .author a {
     color: #ee4444;
+}
+// for tag cloud and archives
+.tag-cloud {
+  list-style: none;
+  padding: 0;
+  text-align: justify; 
+  font-size: 16px;
+  li {
+    display: inline-block;
+    margin: 0 12px 12px 0; 
+  }
+}
+#archives {
+  padding: 5px;
+}
+.archive-group {
+  margin: 5px;
+  border-top: 1px solid #ddd;
+}
+.archive-item {
+  margin-left: 5px;
+}
+.post-tags {
+  text-align: right;
 }

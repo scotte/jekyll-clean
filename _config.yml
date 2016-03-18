@@ -1,34 +1,35 @@
 # Jekyll configuration
 
-name: My blog
-description: A jekyll theme
+name: Liang-Jun Zhu's Blog
+description: GIS, Watershed modeling, Digital terrain analysis...
 
 # url is currently only used only for the RSS feed in feed.xml
-url: https://scotte.github.io/jekyll-clean
+url: https://crazyzlj.github.io/
 
 # baseurl will often be '', but for a project page on gh-pages, it needs to
 # be the project name.
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
-baseurl: /jekyll-clean
+baseurl: ''
+port: 5000
 
 # This can be '' to hide the Github nav button
-github: 'scotte/jekyll-clean'
+github: 'crazyzlj/'
 
 # Set this to your UA-# value, or '' to disable the block completely
-gaaccount: ''
+gaaccount: 'UA-75301149-1'
 
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
 # setting below must also be true. Individual posts can override 'comments' to
 # disable on a post-by-post basis
-disqus: ''
+# disqus: 'liangjunzhusblog'
 comments: true
 
 permalink: /:year/:month/:title
-paginate: 3
+paginate: 6
 
 highlighter: rouge
 markdown: kramdown
 gems: ['jekyll-paginate']
-
+timezone: Asia/Shanghai
 exclude: ['README.md', 'LICENSE']
