@@ -17,12 +17,12 @@ port: 5000
 github: 'crazyzlj/'
 
 # Set this to your UA-# value, or '' to disable the block completely
-gaaccount: ''
+gaaccount: 'UA-75301149-1'
 
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
 # setting below must also be true. Individual posts can override 'comments' to
 # disable on a post-by-post basis
-disqus: 'disqus_em14iaf77h'
+# disqus: 'liangjunzhusblog'
 comments: true
 
 permalink: /:year/:month/:title
@@ -31,5 +31,5 @@ paginate: 3
 highlighter: rouge
 markdown: kramdown
 gems: ['jekyll-paginate']
-
+timezone: Asia/Shanghai
 exclude: ['README.md', 'LICENSE']

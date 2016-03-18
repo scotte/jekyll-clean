@@ -9,17 +9,28 @@
           <div class="article">
             <div class="well">
                 <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%b %-d, %Y" }} - {{ page.title }}</a></h1>
-            {% if site.comments == true and page.comments == true and site.disqus != '' %}
+            <!--{% if site.comments == true and page.comments == true and site.disqus != '' %}
                 <p class="author"><a href="#disqus_thread" data-disqus-identifier="{{ page.url | slugify }}">Comments</a></p>
-            {% endif %}
+            {% endif %}-->
             <div class="post-content">
             {{ content }}
             </div>
             {% if page.comments %}
-            <div id="disqus_thread">
-                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </div>
+			<!-- comments start -->
+			<div class="ds-thread" data-thread-key={{ page.id }} data-title={{ page.title }} data-url="{{ site.baseurl}}{{ page.url }}"></div>
+			<!-- comments end -->
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"zhuliangjun"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
             {% endif %}
             </div>
           </div>
@@ -36,5 +47,5 @@
     </div>
 </div>
 
-{% include disqus-comments.html %}
+<!--{% include disqus-comments.html %}-->
 {% include footer.html %}

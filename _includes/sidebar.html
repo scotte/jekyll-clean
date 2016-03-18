@@ -1,9 +1,10 @@
 <div class="sidebar well">
+<h1>Introduction</h1>
 {{ site.description }}
 </div>
 
 <div class="sidebar well">
-    <h1>Recent Posts</h1>
+    <h1>Recent Blogs</h1>
     <ul>
         {% for post in site.posts limit:5 %}
           <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
