@@ -9,17 +9,25 @@
           <div class="article">
             <div class="well">
                 <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%b %-d, %Y" }} - {{ page.title }}</a></h1>
-            {% if site.comments == true and page.comments == true and site.disqus != '' %}
+            {% if site.comments and page.comments %}
+                {% if site.disqus != '' %}
                 <p class="author"><a href="#disqus_thread" data-disqus-identifier="{{ page.url | slugify }}">Comments</a></p>
+                {% elsif site.isso != '' %}
+                <p class="author"><a href="{{ site.baseurl }}{{ page.url }}{{ site.isso_suffix }}#isso-thread">Comments</a></p>
+                {% endif %}
             {% endif %}
             <div class="post-content">
             {{ content }}
             </div>
             {% if page.comments %}
+                {% if site.disqus != '' %}
             <div id="disqus_thread">
                 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
             </div>
+                {% elsif site.isso != '' %}
+                <section id="isso-thread"></section>
+                {% endif %}
             {% endif %}
             </div>
           </div>
@@ -30,8 +38,7 @@
               {% if page.previous %}
                 <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">Older Post</a>
               {% endif %}
-</div>
-
+          </div>
         </div>
     </div>
 </div>

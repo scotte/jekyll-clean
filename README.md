@@ -79,6 +79,27 @@ $ jekyll serve --baseurl=''
 
 Now browse to http://127.0.0.1:4000
 
+Comment Systems
+===============
+
+Jekyll clean supports both [isso](https://posativ.org/isso) and
+[disqus](https://disqus.com) comment systems.
+
+After enabling **comments**, either **isso** or **disquss** must
+be configured. Don't try configuring both!
+
+Isso Comments
+=============
+
+Isso requires running a local server, so is not suitable for hosting
+in github pages, for example. Isso is open source and keeps all your
+data local, unlike Disqus (who knows exactly what they are doing with
+your data).
+
+In _config.yml you'll need to set **isso** to the fully-qualified URL
+if your isso server (this is the value for **data-isso** passed to the
+isso JS). Make sure **comments** is true.
+
 Disqus Comments
 ===============
 
