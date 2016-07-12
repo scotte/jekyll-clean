@@ -79,6 +79,25 @@ $ jekyll serve --baseurl=''
 
 Now browse to http://127.0.0.1:4000
 
+Using gh-pages
+==============
+
+Running a jekyll site is a bit outside the scope of this doc, but
+sometimes it can be a bit confusing how to configure jekyll for
+project pages versus user pages, for example.
+
+To start with, read through
+[the documentation here](https://help.github.com/articles/user-organization-and-project-pages/).
+This will provide a good overview on how it all works. The git branch and
+baseurl (in _config.yml) will change depending on the sort of site deployed.
+
+When you clone this repository, it's set up for project pages, so the
+deployed branch is "gh-pages" and baseurl is configured to 'jekyll-clean',
+because that's the name of this project.
+
+If you plan to deploy this as user pages (like I do for my own blog),
+the deployed branch is "master" and baseurl is configured to '' (i.e. empty).
+
 Comment Systems
 ===============
 
