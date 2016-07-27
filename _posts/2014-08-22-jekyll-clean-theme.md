@@ -100,8 +100,8 @@ When you clone this repository, it's set up for project pages, so the
 deployed branch is "gh-pages" and baseurl is configured to 'jekyll-clean',
 because that's the name of this project.
 
-If you plan to deploy this as user pages (like I do for my own blog),
-the deployed branch is "master" and baseurl is configured to '' (i.e. empty).
+If you plan to deploy this as user pages, the deployed branch is "master"
+and baseurl is configured to '' (i.e. empty).
 
 Comment Systems
 ===============
