@@ -1,4 +1,4 @@
-Jekyll Clean
+Jekyll Clean Template
 ============
 
 * Get it from [github](https://github.com/scotte/jekyll-clean).
