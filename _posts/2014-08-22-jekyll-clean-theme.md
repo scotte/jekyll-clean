@@ -6,7 +6,8 @@ comments: false
 ---
 
 Welcome to my website. I will be posting blogs about myself, interests, and subjects
-that I find interesting. Hopefully a commment seciton will be up soon so we can actually
+that I find interesting. Hopefully a 
+commment seciton will be up soon so we can actually 
 chat and have an discussion.
 
 Feel free to take a look around and get to know me better on my "About Me" page. 
