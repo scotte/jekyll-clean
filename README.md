@@ -1,13 +1,12 @@
-Jekyll Clean
+Tamara's Website
 ============
 
 * Get it from [github](https://github.com/scotte/jekyll-clean).
 * See the [live demo](https://scotte.github.io/jekyll-clean).
 * See it [in action on my own blog](https://scotte.org).
 
-A simple and clean Jekyll theme using [bootstrap](http://getbootstrap.com)
-(not to be confused with jekyll-bootstrap) that's easy to modify and very
-modular in component and element reuse.
+This website will contain information about myself, my interests, and subject matter 
+in my information science class.
 
 It uses Disqus for comments and includes Google Analytics support. Both of
 these features are disabled by default and can be enabled via \_config.yml. You
