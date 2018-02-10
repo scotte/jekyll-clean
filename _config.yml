@@ -12,8 +12,9 @@ url: https://scotte.github.io/jekyll-clean
 #     run it like so: jekyll serve --baseurl=''
 baseurl: /jekyll-clean
 
-# This can be '' to hide the Github nav button
+# These can be '' to hide the Github or Gitlab nav buttons
 github: 'scotte/jekyll-clean'
+gitlab: ''
 
 # Set this to your UA-# value, or '' to disable the block completely
 gaaccount: ''
