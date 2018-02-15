@@ -98,6 +98,11 @@ because that's the name of this project.
 If you plan to deploy this as user pages, the deployed branch is "master"
 and baseurl is configured to '' (i.e. empty).
 
+Using Gitlab Pages
+==================
+
+A basic .gitlab-ci.yml is provided with this project.
+
 Comment Systems
 ===============
 
