@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll Clean Theme"
-date: 2014-08-22 16:25:06 -0700
+date: 2020-09-03 16:25:06 -0700
 comments: false
 ---
 
@@ -30,40 +30,6 @@ the latest changes. Pull requests are encouraged and accepted!
 Installation
 ============
 
-If you don't have a blog already on github, start by cloning this repository.
-Best to do that directly on github and then clone that down to your computer.
-
-If you already do have a blog, You can certainly apply this theme to your existing
-blog in place, but then you won't be able to merge as the theme changes. If you
-re-apply your blog history on top of this theme's **gh-pages** branch, it's then
-easy to update to the latest version of the theme. You also don't want to have to
-deal with resolving old conflicts from your existing history, so you may wish to to
-push your existing master off to a new branch so you have the old history and start
-a new branch with this as the start, merging in your \_posts and other assets (after
-git rm'ing the current \_posts.
-
-Not ideal, but you have to make a choice - either apply it manually or base your
-blog off this theme's branch. Either way it will work, and both have their own
-pros and cons.
-
-You can setup an upstream tracking repository like so:
-
-```
-$ git remote add upstream git@github.com:scotte/jekyll-clean.git
-```
-And now when you wish to merge your own branch onto the latest version of the
-theme, simply do:
-
-```
-$ git fetch upstream
-$ git merge upstream/gh-pages
-```
-
-Of course you will have to resolve conflicts for \_config.yml, \_includes/links-list.html,
-and \_posts, and so on, but in practice this is pretty simple.
-
-This is how I maintain my own blog which is based on this theme. The old history is
-sitting in an **old-master** branch that I can refer to when I need to.
 
 Running Locally
 ===============
